@@ -6,11 +6,18 @@ body {
     background-size: cover;
     background-position: center;
     color: #000000;
+    background-color: #f7f7f7;
 
 }
+
 a{
     text-decoration: none;
     cursor:pointer;
+}
+
+
+p,h2{
+    margin:0px;
 }
 
 .header {
@@ -82,26 +89,77 @@ nav a{
     border-radius: 20px;
 }
 
-.praisecorner{
+/* .praisecorner{
+    padding: 110px;
+    display: flex;
+    justify-content: center;
+}
+.imgpcontainer{
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    border: 2px solid red;
+    width: 800px;
+    height: fit-content;
+    max-height: 600px;
+    background-color: #ffffff;
+
+
 }
 .praisecorner img{
-    width: 600px;
-    height: 300px;
-    border: 40px solid rgb(248, 243, 243) ;
+    width: 400px;
+    height:300px ;
 }
 
 .praisep{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
     text-align: start;
-    padding: 40px;
+    justify-content: start;
+    padding-left:20px;
+    padding-right:20px;
+
     line-height: 20px;
-    font-size: 18px;
+    font-size: 14px;
     font-family: Cambria, Cochin, Poppins Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
+}
+.praisecorner p{
+
+}
+#praise2{
+    margin-top: 40px;
+} */
+
+
+.praisecorner{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
+    row-gap: 13rem;
+    justify-items: center;
+    align-items: center;
+
+}
+.praisecorner img{
+    width: 400px;
+    height:300px ;
+
+    /* border: 40px solid rgb(206, 39, 39) ; */
 }
 
+.praisep{
+    /* width: 80%; */
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: start;
+    padding-left:20px;
+    padding-right:20px;
+
+    line-height: 20px;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Poppins Georgia, Times, 'Times New Roman', serif;
+    overflow: hidden;
+}
 .praisecorner p{
 
 }
@@ -109,19 +167,10 @@ nav a{
     margin-top: 40px;
 }
 
+
 .services{ 
     margin-top: 20px;
     padding: 40px;
-}
-
-.services p{
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.services h2{ 
-text-align: left;
-margin-bottom: 20px;
 }
 
 .services h3{
@@ -129,39 +178,90 @@ margin-bottom: 20px;
     margin-bottom: 20px;
 }
 
-.servicesinfo{
-    display: flex;
-    justify-content: space-around;
-    padding: 50px;
-    text-align: center;
+.servicesinfo2{
+    border: 3px solid white;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+
+
 }
 
-.detail{
-     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 100px;
-    
+.servicesinfo2img img{
+
+    height: 170px;
+    width: 170px;
+
 }
+.servicesinfo2img{
+    display: flex;
+    justify-content: center;
+
+}
+
+.servicestitle{
+    text-align: center;
+}
+.servicestitle h2{
+    padding-bottom:5px ;
+}
+
+
+.servicesgrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 40px;
+    gap: 20px;
+}
+
+
 
 .about{
 
     text-align: center;
-    width: fit-content;
-    margin: auto;
     justify-content: center;
-    padding: 50px;
+    padding: 80px;
     background-color: #d7ddf7;
     color: black;
-    border-radius: 50px;
+    margin-bottom: 100px;
+
 
 }
+
+.aboutus{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.aboutusps{
+    padding: 10px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
 .stats {
     margin-top: 20px;
-    background-color: #d7ddf7;
+    background-image: url(/images/robot4.png);
+     background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    color: white;
     padding: 40px;
-} 
+}  
+
+.stats{
+    font-weight: 700;
+  font-size: 30px;
+}
+
+
 
 .stats h2 {
     text-align: center;
@@ -181,15 +281,28 @@ margin-bottom: 20px;
 }
 
 .footer-content {
-    text-align: center;
-    padding: 20px;
-    background-color: black;
+    text-align: left;
+    background-color: #000000;
     color: #f8f8fc;
+    padding: 40px;
+    line-height: 1.8rem;
+    font-size: 14px;
 }
 
-.contact{
-    color: white;
-    background-color: #000000;
+.copyright{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.copyrightp{
+    padding-top: 150px;
+}
+.contactgrid{
+    display: flex;
+    justify-content: space-around;
+}
+.contactgrid h2{
+    font-size: 18px;
 }
 
 .whatsapp{
@@ -200,3 +313,7 @@ margin-bottom: 20px;
     color: #e4e6ee;
 }
 
+.gridworker{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
