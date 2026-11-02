@@ -40,4 +40,26 @@
         background-color: green;
         } 
     }
+
+    @media (max-width: 768px) {
+        .praisecorner {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            row-gap: 1.5rem;
+            padding: 1.25rem 1rem;
+        }
+
+        .praisecorner img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 280px;
+        }
+
+        .praisecorner > .praisep:nth-child(3),
+        .praisecorner > img:nth-of-type(2) {
+            grid-column: auto;
+            grid-row: auto;
+        }
+    }
     
